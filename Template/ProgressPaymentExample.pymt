@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<progressPayment showInRecentList="true" lastEditedBy="" createdBy="" dateCreated="">
+  <separablePortions>
+    <separablePortion id="" name="" startingRow="">
+      <sections>
+        <section id="" name="" sectionNumber="" startingRow="" subTotalRow="">
+          <item selected="true">
+            <id></id>
+            <item_number></item_number>
+            <details></details>
+            <unit></unit>
+            <qty></qty>
+            <comment></comment>
+          </item>
+        </section>
+      </sections>
+    </separablePortion>
+  </separablePortions>
+  <contractInfo>
+    <jobNumber></jobNumber>
+    <contractTitle></contractTitle>
+    <typeOfWork></typeOfWork>
+    <client></client>
+    <contractor></contractor>
+    <contractorAddress></contractorAddress>
+    <contractSite></contractSite>
+    <principal></principal>
+    <principalAddress></principalAddress>
+    <progressClaimNo></progressClaimNo>
+    <paymentNo></paymentNo>
+  </contractInfo>
+</progressPayment>

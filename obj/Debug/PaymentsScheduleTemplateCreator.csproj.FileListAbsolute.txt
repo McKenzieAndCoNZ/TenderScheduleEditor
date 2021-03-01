@@ -1,0 +1,40 @@
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.csprojAssemblyReference.cache
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.csproj.ResolveComReference.cache
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Properties.Resources.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.csproj.GenerateResource.cache
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.csproj.CoreCompileInputs.cache
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\PaymentsScheduleTemplateCreator.exe.config
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\PaymentsScheduleTemplateCreator.exe
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\PaymentsScheduleTemplateCreator.pdb
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Docking.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Navigator.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Ribbon.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Toolkit.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Workspace.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Serilog.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Docking.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Navigator.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Ribbon.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Toolkit.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Krypton Workspace.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Serilog.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.csproj.CopyComplete
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.exe
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.pdb
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\MRG.Controls.UI.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmWB_CRUD.FrmWB_CRUD.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmTest.FrmTest.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmAddSectionItem.FrmAddSectionItem.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmContractInfo.FrmContractInfo.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmNewProject.FrmNewProject.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmOpenProject.FrmOpenProject.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmSplash.FrmSplash.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmInfo.FrmInfo.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\ObjectListView.dll
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\bin\Debug\ObjectListView.xml
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmMasterSchedule.FrmMasterSchedule.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmInput.FrmInput.resources
+C:\Users\scott.ferguson\source\repos\PaymentsScheduleTemplateCreator\PaymentsScheduleTemplateCreator\obj\Debug\PaymentsScheduleTemplateCreator.Forms.FrmCreateWorkbook.FrmCreateWorkbook.resources

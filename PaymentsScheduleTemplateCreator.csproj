@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{273EAB1C-3E93-4652-8457-FCF8FC9CE252}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PaymentsScheduleTemplateCreator</RootNamespace>
+    <AssemblyName>PaymentsScheduleTemplateCreator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PaymentsScheduleTemplateCreator.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Krypton Docking, Version=5.470.764.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\KryptonToolkitSuite5470.5.470.2111\lib\net47\Krypton Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton Navigator, Version=5.470.810.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\KryptonToolkitSuite5470.5.470.2111\lib\net47\Krypton Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton Ribbon, Version=5.470.864.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\KryptonToolkitSuite5470.5.470.2111\lib\net47\Krypton Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton Toolkit, Version=5.470.2111.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\KryptonToolkitSuite5470.5.470.2111\lib\net47\Krypton Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton Workspace, Version=5.470.738.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\KryptonToolkitSuite5470.5.470.2111\lib\net47\Krypton Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="MRG.Controls.UI, Version=1.0.2601.14400, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\source\repos\tools\MRG.WinForm.Test\bin\MRG.Controls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.2.9.0\lib\net46\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.File.5.0.0-dev-00909\lib\net45\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Create_NewProject_Controller.cs" />
+    <Compile Include="Controller\Excel_Engine_Controller.cs" />
+    <Compile Include="Controller\Extract_CheckedItems_Controller.cs" />
+    <Compile Include="Controller\Extract_Items_Controller.cs" />
+    <Compile Include="Controller\Extract_Master_Items_Workbook.cs" />
+    <Compile Include="Controller\Extract_Sections_Controller.cs" />
+    <Compile Include="Controller\Extract_Worksheet_Names_Controller.cs" />
+    <Compile Include="Controller\Load_RecentProjects_Controller.cs" />
+    <Compile Include="Controller\MasterSchedule_Controller.cs" />
+    <Compile Include="Controller\Open_AllProjects_Controller.cs" />
+    <Compile Include="Controller\Open_Project_Controller.cs" />
+    <Compile Include="Controller\Populate_NavPages_Controller.cs" />
+    <Compile Include="Controller\Populate_PaymentSchedule_Workbook_Controller.cs" />
+    <Compile Include="Forms\FrmAddSectionItem\FrmAddSectionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAddSectionItem\FrmAddSectionItem.Designer.cs">
+      <DependentUpon>FrmAddSectionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmContractInfo\FrmContractInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmContractInfo\FrmContractInfo.Designer.cs">
+      <DependentUpon>FrmContractInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCreateWorkbook\FrmCreateWorkbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCreateWorkbook\FrmCreateWorkbook.Designer.cs">
+      <DependentUpon>FrmCreateWorkbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInfo\FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInfo\FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInput\FrmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInput\FrmInput.Designer.cs">
+      <DependentUpon>FrmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMasterSchedule\FrmMasterSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMasterSchedule\FrmMasterSchedule.Designer.cs">
+      <DependentUpon>FrmMasterSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNewProject\FrmNewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewProject\FrmNewProject.Designer.cs">
+      <DependentUpon>FrmNewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOpenProject\FrmOpenProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOpenProject\FrmOpenProject.Designer.cs">
+      <DependentUpon>FrmOpenProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOpenProject\FrmOpenProject.ListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSplash\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSplash\FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTest\FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTest\FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWB_CRUD\FrmWB_CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmWB_CRUD\FrmWB_CRUD.Designer.cs">
+      <DependentUpon>FrmWB_CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Checksum_Helper.cs" />
+    <Compile Include="Helper\ExceptionHelper.cs" />
+    <Compile Include="Controller\Extract_MasterSchedule_Data_Controller.cs" />
+    <Compile Include="Helper\KryptonControls_Helper.cs" />
+    <Compile Include="Helper\ListView_Helper.cs" />
+    <Compile Include="Helper\FilePath_Helper.cs" />
+    <Compile Include="Helper\Save_MasterSchedule_Helper.cs" />
+    <Compile Include="Helper\Save_ProjectFile_Helper.cs" />
+    <Compile Include="Helper\Sep_Portions_Helper.cs" />
+    <Compile Include="Helper\StaticProperties_Helper.cs" />
+    <Compile Include="Helper\Worksheet_Helper.cs" />
+    <Compile Include="ListViewExtensions.cs" />
+    <Compile Include="MainForms.cs" />
+    <Compile Include="Models\TenderProject_Model.cs" />
+    <Compile Include="Models\Contract_Model.cs" />
+    <Compile Include="Models\MasterSchedule_Workbook_Model.cs" />
+    <Compile Include="Models\Item_Model.cs" />
+    <Compile Include="Models\Section_Model.cs" />
+    <Compile Include="Models\SeparablePortion_Model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ButtonSpecAny_ViewModel.cs" />
+    <Compile Include="ViewModels\FormPosition_Model.cs" />
+    <Compile Include="ViewModels\HeaderGroup_ViewModel.cs" />
+    <Compile Include="ViewModels\ItemAddedEventArgs.cs" />
+    <Compile Include="ViewModels\Item_ViewModel.cs" />
+    <Compile Include="ViewModels\IWriter.cs" />
+    <Compile Include="ViewModels\KryptonCheckboxSettings_ViewModel.cs" />
+    <Compile Include="ViewModels\KryptonContextHeaderMenuSettings_ViewModel.cs" />
+    <Compile Include="ViewModels\KryptonContextMenuSettings_ViewModel.cs" />
+    <Compile Include="ViewModels\MasterSchedule_ViewModel.cs" />
+    <Compile Include="ViewModels\ProjectFile_ViewModel.cs" />
+    <Compile Include="ViewModels\ProjectSettings_ViewModel.cs" />
+    <Compile Include="Views\RibRecentDoc_View.cs" />
+    <Compile Include="Views\ButtonSpecContext_View.cs" />
+    <Compile Include="Views\ButtonSpecUpArrow_View.cs" />
+    <Compile Include="Views\Checkbox_View.cs" />
+    <Compile Include="Views\CheckListView_View.cs" />
+    <Compile Include="Views\CMS_ListView_View.cs" />
+    <Compile Include="Views\HeaderGroup_View.cs" />
+    <Compile Include="Views\ListViewItems_View.cs" />
+    <Compile Include="Views\NavPage_View.cs" />
+    <Compile Include="Views\PanelCheckbox_View.cs" />
+    <Compile Include="Views\Panel_NavPage.cs" />
+    <Compile Include="Views\SectionColumns_View.cs" />
+    <EmbeddedResource Include="Forms\FrmAddSectionItem\FrmAddSectionItem.resx">
+      <DependentUpon>FrmAddSectionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmContractInfo\FrmContractInfo.resx">
+      <DependentUpon>FrmContractInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCreateWorkbook\FrmCreateWorkbook.resx">
+      <DependentUpon>FrmCreateWorkbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInfo\FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInput\FrmInput.resx">
+      <DependentUpon>FrmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMasterSchedule\FrmMasterSchedule.resx">
+      <DependentUpon>FrmMasterSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewProject\FrmNewProject.resx">
+      <DependentUpon>FrmNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOpenProject\FrmOpenProject.resx">
+      <DependentUpon>FrmOpenProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSplash\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTest\FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWB_CRUD\FrmWB_CRUD.resx">
+      <DependentUpon>FrmWB_CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename-edit-change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_page_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.McKenzie logo_stacked_colour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_stacked_colour_50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Blue1_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_Blue_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_Blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_Blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_Blue_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-as_Blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-as_Blue_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Red 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Red 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract_info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract_info_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_16x_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Blue1_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Blue128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_Project_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McKenzie_logo_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add_16.png" />
+    <None Include="Resources\add_161.png" />
+    <Content Include="Resources\Close_Red 48.png" />
+    <None Include="Resources\ellipsis-16.png" />
+    <None Include="Resources\edit-16.png" />
+    <Content Include="Resources\excel_16.png" />
+    <Content Include="Resources\Excel_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

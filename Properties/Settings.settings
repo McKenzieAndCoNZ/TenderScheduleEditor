@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PaymentsScheduleTemplateCreator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MasterScheduleFullPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\12dS\data\MCKFS01\Standard Documents_3\C_Scheduling\MCL Master schedule R2.xlsx</Value>
+    </Setting>
+    <Setting Name="TenderScheduleWBPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TenderSchedule_FileType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.pymt</Value>
+    </Setting>
+    <Setting Name="MasterScheduleFileType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.mastr</Value>
+    </Setting>
+    <Setting Name="AppName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Payment Schedule Editor</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
